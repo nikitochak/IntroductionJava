@@ -1,4 +1,4 @@
-package com.sirma.itt.javacourse.besen;
+package main.java.com.sirma.itt.javacourse.hangman;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import java.io.IOException;
  * 
  * @author Nikolay Ch
  */
-class Main {
+public class Main {
 	/**
 	 * The main method which generates and initializes two arrays. The first is
 	 * for the word and the second keeps which characters are guessed. The user
@@ -40,7 +40,7 @@ class Main {
 
 		/*
 		 * Integer variable which keeps the lives. The boolean variable which
-		 * keeps whether the word is guessed. Int variable which keeps the
+		 * keeps whether the word is guessed. Integer variable which keeps the
 		 * result of the function. Inputs a character and checks if it exists in
 		 * the word.
 		 */

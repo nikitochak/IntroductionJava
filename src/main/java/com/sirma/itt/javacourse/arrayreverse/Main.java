@@ -1,4 +1,4 @@
-package com.sirma.itt.javacourse.arrayreverse;
+package main.java.com.sirma.itt.javacourse.arrayreverse;
 
 /**
  * This class reverses the elements of an array.

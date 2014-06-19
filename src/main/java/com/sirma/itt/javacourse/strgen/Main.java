@@ -1,4 +1,4 @@
-package com.sirma.itt.javacourse.strgen;
+package main.java.com.sirma.itt.javacourse.strgen;
 
 /**
  * The main class. It generates String by using the method random declared in

@@ -1,4 +1,4 @@
-package com.sirma.itt.javacourse.gcd;
+package main.java.com.sirma.itt.javacourse.gcd;
 
 import java.util.Scanner;
 
@@ -8,14 +8,15 @@ import java.util.Scanner;
  * @author Nikolay Ch
  */
 
-class Nod {
+public class Nod {
+	public int first;
+	public int second;
+	
 	public static void main(String[] args) {
-		/**
-		 * The variables for the two numbers.
-		 */
 		int first;
 		int second;
-		/**
+		
+		/*
 		 * Initializes the variables from the keyboard.
 		 */
 		System.out.println("Enter the values: ");
@@ -26,7 +27,7 @@ class Nod {
 
 		bufferInput.close();
 
-		/**
+		/*
 		 * Finds the gcd by the algorithm bigger - smaller until they are not
 		 * equal.
 		 * 
@@ -38,11 +39,13 @@ class Nod {
 				second = second - first;
 		}
 
-		/**
-		 * @prints the wanted gcd
+		/*
+		 * Prints the wanted gcd.
 		 */
 
 		System.out.print("The nod is: \n" + first);
 
 	}
+
+	
 }

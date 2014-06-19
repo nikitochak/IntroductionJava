@@ -1,4 +1,4 @@
-package com.sirma.itt.javacourse.methodsarray;
+package main.java.com.sirma.itt.javacourse.methodsarray;
 
 /**
  * Class which contains an Array and methods for finding the minimum element,
@@ -8,7 +8,7 @@ package com.sirma.itt.javacourse.methodsarray;
  */
 public class Help {
 
-	int Array[] = new int[10];
+	public int Array[] = new int[10];
 
 	/**
 	 * Method for getting the minimum value of an Array. Cycles through the
@@ -21,7 +21,7 @@ public class Help {
 	 * @return the minimum element of the Array
 	 */
 
-	int getMinElement(int[] Array) {
+	public int getMinElement(int[] Array) {
 		// the counter for the cycle
 		int count;
 		// the variable which keeps the minimum element
@@ -43,7 +43,7 @@ public class Help {
 	 *            Array
 	 * @return the sum of the Arrays'elements
 	 */
-	int getSum(int[] Array) {
+	public int getSum(int[] Array) {
 		// the counter for the cycle
 		int count;
 		// variable which keeps the sum of the elements
@@ -61,7 +61,7 @@ public class Help {
 	 *            Array
 	 */
 
-	void printArray(int[] Array) {
+	public void printArray(int[] Array) {
 		// the counter for the cycle
 		int count;
 

@@ -1,4 +1,4 @@
-package com.sirma.itt.javacourse.findcenter;
+package main.java.com.sirma.itt.javacourse.findcenter;
 
 /**
  * The main class. It initializes an Array and finds its center of the weight.
@@ -7,7 +7,7 @@ package com.sirma.itt.javacourse.findcenter;
  * 
  */
 
-class Main {
+public class Main {
 	/**
 	 * The main method. It finds the center by comparing the sum of the elements
 	 * before the current element and the sum of the other elements without the

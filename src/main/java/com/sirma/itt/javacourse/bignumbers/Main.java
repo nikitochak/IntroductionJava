@@ -1,4 +1,4 @@
-package com.sirma.itt.javacourse.bignumbers;
+package main.java.com.sirma.itt.javacourse.bignumbers;
 
 /**
  * Main class which finds the sum of a random numbers with random length and
@@ -6,7 +6,7 @@ package com.sirma.itt.javacourse.bignumbers;
  * 
  * @author Nikolay Ch
  */
-class Main {
+public class Main {
 
 	/**
 	 * Main method which declares and initializes two char arrays with random
@@ -23,7 +23,7 @@ class Main {
 		 * The sizes of the first two numbers;
 		 */
 		int size1 = (int) (Math.random() * 30 + 2);
-		int size2 = (int) (Math.random() * 30 + 2);
+		int size2 = (int) (Math.random() * 10 + 2);
 		int size3 = Math.max(size1, size2) + 1;
 
 		/*
@@ -60,8 +60,16 @@ class Main {
 
 			if (i < 0) {
 				value = value + (int) (second[j] - '0');
+				if (value >= 10) {
+					isAbove10 = true;
+					value = value % 10;
+				}else{isAbove10=false;}
 			} else if (j < 0) {
 				value = value + (int) (first[i] - '0');
+				if (value >= 10) {
+					isAbove10 = true;
+					value = value % 10;
+				}else{isAbove10=false;}
 			} else {
 				value = value + (int) (first[i] - '0')
 						+ (int) (second[j] - '0');

@@ -1,4 +1,4 @@
-package com.sirma.itt.javacourse.besen;
+package main.java.com.sirma.itt.javacourse.hangman;
 
 /**
  * 
@@ -11,7 +11,7 @@ package com.sirma.itt.javacourse.besen;
  * 
  */
 
-class Help {
+public class Help {
 
 	/**
 	 * This is void method which initializes a char array with random values.
@@ -27,7 +27,7 @@ class Help {
 	 * @param size
 	 *            the length of both arrays
 	 */
-	static void wordGen(char[] word, boolean[] wordGuess, int size) {
+	public static void wordGen(char[] word, boolean[] wordGuess, int size) {
 
 		char lett;
 		int val;
@@ -79,6 +79,16 @@ class Help {
 		return guss;
 	}
 
+	/**
+	 * This method prints the elements of an Array.
+	 * 
+	 * @param word
+	 *            the char array which elements will be printed.
+	 * @param wordGuess
+	 *            keeps if the element must be printed.
+	 * @param size
+	 *            the size of the array
+	 */
 	static void printWord(char[] word, boolean[] wordGuess, int size) {
 		for (int i = 0; i < size; i++) {
 			if (wordGuess[i] == true) {
