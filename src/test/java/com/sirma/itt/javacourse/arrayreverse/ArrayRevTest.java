@@ -1,4 +1,4 @@
-package test.java.com.sirma.it.javacourse.arrayreverse;
+package test.java.com.sirma.itt.javacourse.arrayreverse;
 
 import main.java.com.sirma.itt.javacourse.arrayreverse.*;
 import static org.junit.Assert.*;
