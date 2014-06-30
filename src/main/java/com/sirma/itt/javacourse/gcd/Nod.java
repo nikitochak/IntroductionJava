@@ -16,10 +16,11 @@ public class Nod {
 
 	public static int calculate(int first, int second) {
 		while (first != second) {
-			if (first > second)
+			if (first > second) {
 				first = first - second;
-			else
+			} else {
 				second = second - first;
+			}
 		}
 
 		// Prints the wanted gcd.

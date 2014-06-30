@@ -52,11 +52,11 @@ public class SumOfTwoNumbers {
 		int value = 0;
 		for (int i = firstNumber.length - 1, j = secondNumber.length - 1, k = size3 - 1; k - 1 >= 0; i--, j--, k--) {
 
-			if (isAbove10 == true)
+			if (isAbove10 == true) {
 				value = 1;
-			else
+			} else {
 				value = 0; // if the previous sum is higher than 10 the value
-							// starts with 1
+			} // starts with 1
 
 			if (i < 0) {
 				value = value + (int) (secondNumber[j] - '0');
@@ -87,7 +87,6 @@ public class SumOfTwoNumbers {
 			sumOfTheNumbers[k] = (char) (value + '0');
 		}
 
-		
 		return sumOfTheNumbers;
 	}
 
