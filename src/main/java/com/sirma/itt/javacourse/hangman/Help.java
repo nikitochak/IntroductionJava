@@ -1,14 +1,12 @@
 package main.java.com.sirma.itt.javacourse.hangman;
 
 /**
- * 
  * This is help class with some static methods. The first initializes char array
  * with random characters but only numbers and letters. The second checks if a
  * char character is consisted in a word (char array). The third prints the
  * characters of the word but only these which are guessed.
  * 
  * @author Nikolay Ch
- * 
  */
 
 public class Help {
@@ -17,8 +15,6 @@ public class Help {
 	 * This is void method which initializes a char array with random values.
 	 * Initializes an boolean array as in the beginning only the first and last
 	 * values are true.
-	 * 
-	 * 
 	 * 
 	 * @param word
 	 *            the char array which must be initialized

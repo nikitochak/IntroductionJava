@@ -1,7 +1,8 @@
 package main.java.com.sirma.itt.javacourse.arrayreverse;
 
 /**
- * This class reverses the elements of an array.
+ * This class has methods for initializing an array, reversing its elements and
+ * printing them on the console.
  * 
  * @author Nikolay Ch
  */
@@ -10,22 +11,20 @@ public class ArrayReverse {
 	/**
 	 * Initializes an array.
 	 */
-	public static void initializeArray(int[] array) {
+	public void initializeArray(int[] array, int n) {
 
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < n; i++) {
 			array[i] = i;
 		}
 	}
 
 	/**
-	 * 
-	 * Reversing the array by finding the middle element and changing the
-	 * values.
+	 * Reverses the array by finding the middle element and changing the values.
 	 * 
 	 * @param array
-	 *            the array which elements we want to reverse
+	 *            the array which elements must be reversed
 	 */
-	public static void reverseArray(int[] array) {
+	public void reverseArray(int[] array) {
 
 		int middle = (int) (array.length / 2);
 		int len = array.length - 1;
@@ -38,11 +37,10 @@ public class ArrayReverse {
 			array[len - i] = k;
 
 		}
-
 	}
 
 	/**
-	 * Prints the array.
+	 * Prints the elements of an array.
 	 * 
 	 * @param array
 	 *            the array which we want to print

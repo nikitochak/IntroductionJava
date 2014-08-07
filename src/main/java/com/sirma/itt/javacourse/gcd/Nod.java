@@ -22,11 +22,6 @@ public class Nod {
 				second = second - first;
 			}
 		}
-
-		// Prints the wanted gcd.
-
 		return first;
-
 	}
-
 }

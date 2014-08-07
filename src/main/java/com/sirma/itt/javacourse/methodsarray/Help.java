@@ -14,13 +14,13 @@ public class Help {
 	 * minimum element until it. If it is so, the variable for the minimum
 	 * element gets the value of the current element.
 	 * 
-	 * @param the
-	 *            array
+	 * @param Array
+	 *            the array
 	 * @return the minimum element of the Array
 	 */
 
 	public static int getMinElement(int[] Array) {
-		// the counter for the cycle
+		// the counter for the loop
 		int count;
 		// the variable which keeps the minimum element
 		int mini = 100;
@@ -55,8 +55,8 @@ public class Help {
 	/**
 	 * Prints the elements of an Array.
 	 * 
-	 * @param the
-	 *            Array
+	 * @param Array
+	 *            the Array
 	 */
 
 	public static void printArray(int[] Array) {
@@ -68,7 +68,5 @@ public class Help {
 					+ Array[count]);
 			System.out.println();
 		}
-
 	}
-
 }

@@ -11,18 +11,15 @@ import java.io.IOException;
  */
 public class Main {
 	/**
-	 * The main method which generates and initializes two arrays. The first is
-	 * for the word and the second keeps which characters are guessed. The user
-	 * inputs a characters and it checks if he is guessed. This is continuing
-	 * until the customer guess the word or he dies (his lives are finished).
+	 * Starts the game from here.Initializes two arrays. The first is for the
+	 * word and the second keeps which characters are guessed. The user inputs a
+	 * characters and it checks if he it is guessed. This is continuing until
+	 * the user guess the word or he dies (his lives are finished).
 	 * 
-	 * @param args
 	 * @throws IOException
+	 *             when an input/ output error occurs
 	 */
-	public static void main(String[] args) throws IOException {
-		/*
-		 * Generates the size of the word.
-		 */
+	public void play() throws IOException {
 		int size = (int) (Math.random() * 20 + 5);
 
 		System.out.println("The word has " + size + " letters.");
@@ -72,9 +69,7 @@ public class Main {
 			}
 
 		}
-
 		System.out.println("You are hanged.");
 		System.out.println(word);
-
 	}
 }

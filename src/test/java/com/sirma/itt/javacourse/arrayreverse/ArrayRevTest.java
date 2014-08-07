@@ -14,18 +14,15 @@ import org.junit.Test;
 public class ArrayRevTest {
 
 	/**
-	 * Initializes an array with random values. And invokes the method for
-	 * reversing the elements.
+	 * Initializes an array with random values. Invokes the method for reversing
+	 * the elements.
 	 */
 	@Test
 	public void testReverse() {
 		int[] array = new int[10];
-		ArrayReverse.initializeArray(array);
-
-		ArrayReverse.reverseArray(array);
-
+		ArrayReverse reverse = new ArrayReverse();
+		reverse.initializeArray(array, 10);
+		reverse.reverseArray(array);
 		assertEquals(array[0], 9);
-
 	}
-
 }

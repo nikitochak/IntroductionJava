@@ -9,30 +9,17 @@ package main.java.com.sirma.itt.javacourse.bignumbers;
 public class SumOfTwoNumbers {
 
 	/**
-	 * Initializes two char arrays with only numbers.
+	 * Initializes a char array with only numbers.
 	 * 
+	 * @return the array with numbers.
 	 */
-	public static void initializeNumbers() {
-
-		int size1 = (int) (Math.random() * 30 + 2);
-		int size2 = (int) (Math.random() * 10 + 2);
-
-		// The three numbers. First+second=third;
-
-		char[] first = new char[size1];
-		char[] second = new char[size2];
-
-		// Initializes the two numbers.
-
-		for (int i = 0; i < size1; i++) {
-			first[i] = (char) (Math.random() * 9 + '0');
+	public char[] initializeNumbers(char[] number) {
+		int size = (int) (Math.random() * 30 + 2);
+		number = new char[size];
+		for (int i = 0; i < size; i++) {
+			number[i] = (char) (Math.random() * 9 + '0');
 		}
-		for (int i = 0; i < size2; i++) {
-			second[i] = (char) (Math.random() * 9 + '0');
-		}
-		System.out.println(first);
-		System.out.println(second);
-
+		return number;
 	}
 
 	/**
@@ -97,12 +84,7 @@ public class SumOfTwoNumbers {
 	 *            the array
 	 */
 	public static void printElements(char[] number) {
-		System.out.print("Here is the sum: ");
-		for (int i = 0; i < number.length; i++) {
-			if (i != 0 || number[0] != '0') {
-				System.out.print(number[i]);
-			}
-		}
+		System.out.println(number);
 	}
 
 }

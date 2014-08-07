@@ -1,8 +1,7 @@
 package test.java.com.sirma.itt.javacourse.strgen;
 
 import static org.junit.Assert.*;
-import main.java.com.sirma.itt.javacourse.strgen.GenerationOfWord;
-
+import main.java.com.sirma.itt.javacourse.strgen.Generator;
 import org.junit.Test;
 
 /**
@@ -19,7 +18,7 @@ public class WordGenTest {
 	@Test
 	public void test() {
 		String word = "asdf";
-		word = GenerationOfWord.generate(word);
+		word = Generator.generate(word);
 		if (word.equals("asdf")) {
 			fail("Not");
 		}
